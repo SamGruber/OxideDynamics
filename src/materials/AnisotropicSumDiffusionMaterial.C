@@ -30,5 +30,4 @@ AnisotropicSumDiffusionMaterial::computeQpProperties()
   Real x = _q_point[_qp](0) ;
   Real alpha = (x - _x_min) / (_x_max - _x_min);
   _K[_qp] = _K_ani * alpha + _K_iso * (1 - alpha);
-  std::cout << "Combined Tensor K:\n" << _K[_qp] << std::endl;
 }

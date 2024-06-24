@@ -1,6 +1,6 @@
 #include "AnisotropicSumDiffusion.h"
 
-registerMooseObject("MooseApp", AnisotropicSumDiffusion);
+registerMooseObject("MarmotApp", AnisotropicSumDiffusion);
 
 InputParameters
 AnisotropicSumDiffusion::validParams()
